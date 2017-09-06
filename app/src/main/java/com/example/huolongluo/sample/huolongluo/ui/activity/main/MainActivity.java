@@ -25,7 +25,8 @@ import javax.inject.Inject;
 import butterknife.BindView;
 
 /**
- * Created by Administrator on 2017/8/10.
+ * <p>
+ * Created by 火龙裸 on 2017/8/10.
  */
 
 public class MainActivity extends BaseActivity implements MainContract.View
