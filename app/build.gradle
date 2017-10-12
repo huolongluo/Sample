@@ -58,6 +58,7 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.5.0'
     /***************** 网络请求 ****************/
     compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.alibaba:fastjson:1.2.12'
     //Android SharePreference框架Favor
     compile 'com.cocosw:favor:0.2.0@aar'
     //Android依赖注入框架

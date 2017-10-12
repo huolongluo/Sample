@@ -8,9 +8,14 @@ import android.widget.Filter;
 import android.widget.Filterable;
 
 import com.example.huolongluo.sample.superAdapter.BaseFilter;
+import com.jakewharton.rxbinding.view.RxView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import rx.Observable;
+import rx.android.schedulers.AndroidSchedulers;
 
 /**
  * Wrapper of BaseAdapter.
@@ -236,5 +241,15 @@ public abstract class BaseSuperAdapter<T, H extends BaseViewHolder> extends Base
     public List<T> onFilterRule(String prefixString, List<T> unfilteredValues)
     {
         return null;
+    }
+
+    public Observable<Void> eventClick(View view)
+    {
+        return eventClick(view, 1000);
+    }
+
+    public Observable<Void> eventClick(View view, int milliseconds)
+    {
+        return RxView.clicks(view).throttleFirst(milliseconds, TimeUnit.MILLISECONDS).observeOn(AndroidSchedulers.mainThread());
     }
 }

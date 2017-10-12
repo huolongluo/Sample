@@ -3,10 +3,17 @@ package com.example.huolongluo.sample.superAdapter.recycler;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
+
+import com.jakewharton.rxbinding.view.RxView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import rx.Observable;
+import rx.android.schedulers.AndroidSchedulers;
 
 /**
  * Base of QuickAdapter.
@@ -166,6 +173,16 @@ public abstract class BaseSuperAdapter<T, H extends BaseViewHolder> extends Recy
     public List<T> getAllData()
     {
         return mList;
+    }
+
+    public Observable<Void> eventClick(View view)
+    {
+        return eventClick(view, 1000);
+    }
+
+    public Observable<Void> eventClick(View view, int milliseconds)
+    {
+        return RxView.clicks(view).throttleFirst(milliseconds, TimeUnit.MILLISECONDS).observeOn(AndroidSchedulers.mainThread());
     }
 
 }
