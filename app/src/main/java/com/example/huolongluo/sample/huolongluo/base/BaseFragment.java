@@ -42,6 +42,14 @@ public abstract class BaseFragment extends Fragment implements BaseView
     Unbinder unbinder;
     public Subscription subscription;
 
+    public static BaseFragment newInstance(Class <? extends BaseFragment> cls) throws IllegalAccessException, java.lang.InstantiationException
+    {
+        Bundle args = new Bundle();
+        BaseFragment fragment = cls.newInstance();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
