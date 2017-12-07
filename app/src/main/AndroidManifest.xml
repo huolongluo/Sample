@@ -13,13 +13,18 @@
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
 
-        <activity android:name=".huolongluo.ui.activity.main.MainActivity">
+        <activity
+            android:name=".huolongluo.ui.activity.StartActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".huolongluo.ui.activity.main.MainActivity"/>
 
     </application>
 
