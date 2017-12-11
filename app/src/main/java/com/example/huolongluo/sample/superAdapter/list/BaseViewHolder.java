@@ -261,6 +261,13 @@ public class BaseViewHolder
         return this;
     }
 
+    public BaseViewHolder setClickable(int viewId, boolean clickable)
+    {
+        View view = getView(viewId);
+        view.setClickable(clickable);
+        return this;
+    }
+
     public BaseViewHolder setOnTouchListener(int viewId, View.OnTouchListener listener)
     {
         View view = getView(viewId);
