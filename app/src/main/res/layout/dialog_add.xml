@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="@style/match_wrap"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <com.example.huolongluo.sample.widget.RoundRelativeLayout
+        android:id="@+id/rrl_content"
+        style="@style/match_wrap"
+        android:paddingBottom="@dimen/y60"
+        app:rv_backgroundColor="@color/FFFFFF"
+        app:rv_cornerRadius_TL="@dimen/x8"
+        app:rv_cornerRadius_TR="@dimen/x8">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_mw_333333_36"
+            android:layout_marginTop="@dimen/y40"
+            android:text="添加商品"/>
+
+        <TextView
+            android:id="@+id/tv_name_label"
+            style="@style/text_ww_333333_36"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginTop="@dimen/y60"
+            android:text="名称"/>
+
+        <com.example.huolongluo.sample.widget.FilterEditText
+            android:id="@+id/fet_name"
+            style="@style/edit_my80_333333_30"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="@dimen/x20"
+            android:maxLength="20"
+            android:layout_marginRight="@dimen/x60"
+            android:layout_marginTop="@dimen/y40"
+            android:layout_toRightOf="@id/tv_name_label"
+            android:background="@drawable/bg_ffffff_b1b1b1_side"
+            android:hint="请输入商品名称"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"/>
+
+        <TextView
+            android:id="@+id/tv_price_label"
+            style="@style/text_ww_333333_36"
+            android:layout_below="@id/fet_name"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginTop="@dimen/y40"
+            android:text="单价"/>
+
+        <EditText
+            android:id="@+id/et_price"
+            style="@style/edit_my80_333333_30"
+            android:layout_below="@id/fet_name"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x60"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_toRightOf="@id/tv_price_label"
+            android:background="@drawable/bg_ffffff_b1b1b1_side"
+            android:hint="请输入商品价格"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"/>
+
+    </com.example.huolongluo.sample.widget.RoundRelativeLayout>
+
+    <include
+        layout="@layout/include_cancel_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rrl_content"/>
+
+</RelativeLayout>

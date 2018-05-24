@@ -64,4 +64,115 @@
         <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
     </style>
 
+    <style name="wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_y80">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y80</item>
+    </style>
+
+    <!-- 水平分割线 1px 灰色e0e0e0 -->
+    <style name="divider_horizontal_1px_e0e0e0" parent="divider_horizontal_1px">
+        <item name="android:background">@color/E0E0E0</item>
+    </style>
+
+    <!-- 黑字333333 36大小  match y106 灰底-->
+    <style name="rtext_my106_333333_36_ff9213" parent="rtext_my106_333333_36">
+        <item name="rv_backgroundColor">@color/E0E0E0</item>
+        <item name="rv_backgroundPressColor">@color/AEA9A9</item>
+    </style>
+
+    <!--  黑字333333 36大小  match y106 -->
+    <style name="rtext_my106_333333_36" parent="rtext_my106_333333">
+        <item name="android:textSize">@dimen/text_size36</item>
+    </style>
+
+    <!--  黑字  match y106 -->
+    <style name="rtext_my106_333333" parent="match_y106">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/FF333333</item>
+    </style>
+
+    <!--  黑字333333 36大小 match wrap -->
+    <style name="text_mw_333333_36" parent="text_mw_333333">
+        <item name="android:textSize">@dimen/text_size36</item>
+    </style>
+
+    <!--  黑字  match wrap -->
+    <style name="text_mw_333333" parent="match_wrap">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/FF333333</item>
+    </style>
+
+    <!--  黑字333333 36大小 wrap wrap -->
+    <style name="text_ww_333333_36" parent="text_ww_333333">
+        <item name="android:textSize">@dimen/text_size36</item>
+    </style>
+
+    <!--  黑字  wrap wrap -->
+    <style name="text_ww_333333" parent="wrap_wrap">
+        <item name="android:textColor">@color/FF333333</item>
+    </style>
+
+    <!--  黑字333333 字号30 match y80 -->
+    <style name="edit_my80_333333_30" parent="edit_my80_333333">
+        <item name="android:textSize">@dimen/text_size30</item>
+    </style>
+
+    <!--  黑字333333  match y80 -->
+    <style name="edit_my80_333333" parent="match_y80">
+        <item name="android:textColor">@color/FF333333</item>
+        <item name="android:textColorHint">@color/BBBBBB</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!--  红字ff9213 36大小 wrap wrap -->
+    <style name="text_ww_f74d47_36" parent="text_ww_f74d47">
+        <item name="android:textSize">@dimen/text_size36</item>
+    </style>
+
+    <!--  红字f74d47  wrap wrap -->
+    <style name="text_ww_f74d47" parent="wrap_wrap">
+        <item name="android:textColor">@color/F74D47</item>
+    </style>
+
+    <!--  红字f74d47 30大小  wrap wrap -->
+    <style name="text_ww_f74d47_30" parent="text_ww_f74d47">
+        <item name="android:textSize">@dimen/text_size30</item>
+    </style>
+
+    <!--  红字f74d47 24大小  wrap wrap -->
+    <style name="text_ww_f74d47_24" parent="text_ww_f74d47">
+        <item name="android:textSize">@dimen/text_size24</item>
+    </style>
+
+    <!--  白字 30大小 wrap wrap -->
+    <style name="text_ww_ffffff_30" parent="text_ww_ffffff">
+        <item name="android:textSize">@dimen/text_size30</item>
+    </style>
+
+    <!--  白字  wrap wrap -->
+    <style name="text_ww_ffffff" parent="wrap_wrap">
+        <item name="android:textColor">@color/FFFFFF</item>
+    </style>
+
+    <!-- 水平分割线 1px -->
+    <style name="divider_horizontal_1px">
+        <item name="android:layout_height">@dimen/y1</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="match_y106">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y106</item>
+    </style>
+
 </resources>

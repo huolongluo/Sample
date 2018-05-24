@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.huolongluo.sample.widget.RoundLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:rv_backgroundColor="@color/E0E0E0"
+    app:rv_cornerRadius="@dimen/x8">
+
+    <View
+        style="@style/divider_horizontal_1px_e0e0e0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.example.huolongluo.sample.widget.RoundTextView
+            android:id="@+id/rtv_cancel"
+            style="@style/rtext_my106_333333_36_ff9213"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textColor="#999999"
+            app:rv_backgroundColor="@color/FFFFFF"
+            app:rv_cornerRadius_BL="@dimen/x8"/>
+
+        <com.example.huolongluo.sample.widget.RoundTextView
+            android:id="@+id/rtv_ok"
+            style="@style/rtext_my106_333333_36_ff9213"
+            android:layout_marginLeft="@dimen/x1"
+            android:layout_weight="1"
+            android:text="确定"
+            android:textColor="@color/FF9213"
+            app:rv_backgroundColor="@color/FFFFFF"
+            app:rv_cornerRadius_BR="@dimen/x8"/>
+
+    </LinearLayout>
+
+</com.example.huolongluo.sample.widget.RoundLinearLayout>

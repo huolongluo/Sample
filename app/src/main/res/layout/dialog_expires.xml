@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qiyu.widget.RoundRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/x380"
+    android:layout_height="@dimen/y280"
+    android:alpha="0.8"
+    android:orientation="vertical"
+    android:padding="@dimen/x40"
+    app:rv_backgroundColor="@color/FF000000"
+    app:rv_cornerRadius="@dimen/x10">
+
+    <TextView
+        android:id="@+id/tv_tip"
+        style="@style/text_ww_ffffff_30"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y40"
+        android:gravity="center"
+        android:text="您的使用期限即将到期请尽快充值！"/>
+
+    <TextView
+        android:id="@+id/tv_time_tip"
+        style="@style/text_ww_f74d47_30"
+        android:layout_below="@id/tv_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y30"
+        android:text="剩余时间"
+        android:textColor="#FF0000"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="@dimen/x130"
+        android:layout_height="@dimen/y1"
+        android:layout_below="@id/tv_time_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y6"
+        android:background="#FF0000"
+        android:visibility="gone"/>
+</com.qiyu.widget.RoundRelativeLayout>

@@ -39,15 +39,7 @@ public abstract class BaseDialog extends DialogFragment implements BaseView
     View view;
     protected int currentStyle = 0;
     public static final int ADD_GOODS = 0;
-    public static final int ADD_GOODS_TO_SHOPPING_CAR = 1;
-    public static final int SHOPPING_CAR_SHOW = 2;
     public static final int SHOW_TIME = 3;
-    public static final int SET_MONEY = 4;
-    public static final int EXIT_APP = 5;
-    public static final int CHANGE_INFO = 6;
-    public static final int SHIFT_TEST = 7;
-    public static final int CHOICE_SHOP = 8;
-    public static final int CLICK_TIPS = 9;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
