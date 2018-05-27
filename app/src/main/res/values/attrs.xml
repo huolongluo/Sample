@@ -102,4 +102,12 @@
         <attr name="min_adapter_stack" format="integer" />
         <attr name="max_visible" format="integer" />
     </declare-styleable>
+
+    <!-- 自定义圆角ImageView -->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+        <attr name="civ_border_overlay" format="boolean"/>
+        <attr name="civ_fill_color" format="color"/>
+    </declare-styleable>
 </resources>
