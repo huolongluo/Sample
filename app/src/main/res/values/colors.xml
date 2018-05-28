@@ -4,13 +4,18 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="FFFFFF">#FFFFFF</color>
     <color name="E0E0E0">#E0E0E0</color>
     <color name="AEA9A9">#AEA9A9</color>
     <color name="BBBBBB">#BBBBBB</color>
+    <color name="A2A2A2">#A2A2A2</color>
+    <color name="B6B6B1">#b6b6b1</color>
+    <color name="F69696A">#69696A</color>
     <color name="FF333333">#333333</color>
-    <color name="FFFFFF">#FFFFFF</color>
     <color name="FF9213">#FF9213</color>
     <color name="F8A848">#F8A848</color>
     <color name="FF000000">#000000</color>
+    <color name="F00ACff">#00acff</color>
+    <color name="F6898E">#F6898E</color>
     <color name="F74D47">#F74D47</color>
 </resources>
